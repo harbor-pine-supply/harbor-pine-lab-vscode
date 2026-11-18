@@ -3,6 +3,10 @@
 ## Decision (a person, 2026-11-18)
 - Approved, with the agent's recommendation on its question: an empty order has no shipping and totals 0 (nothing ships). In scope: shipping in the order total and its tests. Not in scope: taxes, discounts.
 
+## Reviewer's fixes at the plan gate (READY WITH FIXES), accepted by a person
+- Update the plan to reflect the approved decision and require an empty-order total of exactly 0.
+- Specify `shipping(lines)` as 0 for empty orders or subtotals ≥7500 cents, and 895 cents otherwise.
+
 ## Acceptance criteria (from the issue)
 - Orders of 7500 cents or more ship free.
 - Otherwise shipping is 895 cents.
